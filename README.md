@@ -1,77 +1,56 @@
-# AppCadastroUsuario
+# SistemaCadastro - App de Cadastro de Usuários
 
-Bem-vindo ao **AppCadastroUsuario**! Este é um aplicativo para gerenciamento e cadastro de usuários.
+## Descrição do Projeto
 
-## 📋 Descrição
+O SistemaCadastro é um aplicativo Android simples para gerenciar o cadastro de usuários. O app permite registrar nome, endereço e telefone de cada usuário e navegar entre a tela principal, o formulário de cadastro e a listagem de registros.
 
-Este projeto fornece uma solução completa para cadastro, gerenciamento e administração de usuários. O aplicativo foi desenvolvido para facilitar o registro e a organização de dados de usuários de forma segura e eficiente.
+## Interface do Aplicativo
 
-## 🚀 Características
+Adicione aqui os prints da sua interface.
 
-- ✅ Cadastro de novos usuários
-- ✅ Edição de informações de usuários
-- ✅ Exclusão de usuários
-- ✅ Listagem de usuários
-- ✅ Interface intuitiva e amigável
+## Regras de Negócio
 
-## 💻 Tecnologias Utilizadas
+- Cada registro contém nome, endereço e telefone.
+- O usuário deve confirmar antes de salvar um novo cadastro.
+- A listagem exibe os registros na ordem de cadastro.
+- A navegação permite voltar ao menu principal a qualquer momento.
+- Se não houver registros cadastrados, a listagem exibe um aviso.
+- Os dados são mantidos em memória apenas enquanto o app estiver aberto.
 
-- [Adicione as tecnologias utilizadas no seu projeto]
-- Linguagem: [Ex: Java, Python, JavaScript, etc.]
-- Banco de Dados: [Ex: MySQL, PostgreSQL, MongoDB, etc.]
-- Framework: [Ex: Spring Boot, Django, React, etc.]
+## Tecnologias
 
-## 📦 Instalação
+- Linguagem: Java
+- Interface: XML
+- Android SDK: compileSdk 36, minSdk 24, targetSdk 36
+- Ferramenta: Android Studio
+- Bibliotecas: AndroidX AppCompat, Material Components, Activity, ConstraintLayout
 
-### Pré-requisitos
+## Funcionalidades
 
-- [Listar os requisitos necessários]
+- Cadastro de novos usuários com nome, telefone e endereço.
+- Confirmação de cadastro com diálogo de alerta.
+- Navegação entre tela principal, cadastro e listagem.
+- Exibição de registros com botões "Anterior" e "Próximo".
+- Contador de registros exibindo a posição atual.
+- Retorno ao menu principal a partir da listagem.
 
-### Passo a Passo
+## Estrutura do Projeto
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/HellRiqueyy/AppCadastroUsuario.git
-```
+- `MainActivity.java`: gerencia a lista de registros e navegação entre telas.
+- `Registro.java`: modelo de dados do usuário.
+- `TelaPrincipal.java`: menu inicial com botões para cadastro e listagem.
+- `TelaCadastroUsuario.java`: formulário de cadastro de usuários.
+- `TelaListagemUsuario.java`: exibe registros cadastrados com navegação.
 
-2. Navegue até o diretório do projeto:
-```bash
-cd AppCadastroUsuario
-```
+## Uso
 
-3. [Adicione os passos específicos de instalação]
+1. Abra o aplicativo.
+2. Toque em "Cadastrar Usuário" para inserir um novo registro.
+3. Preencha nome, telefone e endereço.
+4. Confirme o cadastro.
+5. Use "Listar Usuários Cadastrados" para ver os registros existentes.
 
-## 🔧 Configuração
+## Observações
 
-[Descreva como configurar o projeto]
-
-## 📖 Uso
-
-[Adicione exemplos de como usar o aplicativo]
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas! Para contribuir:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📄 Licença
-
-Este projeto está sob licença [Adicione a licença utilizada]. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 👤 Autor
-
-**HellRiqueyy**
-- GitHub: [@HellRiqueyy](https://github.com/HellRiqueyy)
-
-## 📞 Suporte
-
-Se tiver dúvidas ou encontrar problemas, abra uma [Issue](https://github.com/HellRiqueyy/AppCadastroUsuario/issues).
-
----
-
-**Desenvolvido com ❤️ por HellRiqueyy**
+- Este projeto não possui persistência de dados em disco ou banco de dados.
+- Todos os registros são armazenados apenas enquanto o app estiver em execução.
